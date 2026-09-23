@@ -11,8 +11,7 @@
   Keep it in step with "User Data" in README.md — they describe the same
   behaviour, and a reviewer may read both.
 
-  Before publishing, fill the two TODO fields below (search for data-todo) and
-  get the text approved: RELEASE.md notes that the legal URLs are e.l.f.'s to
+  Get changes to the text approved before publishing: RELEASE.md notes that the legal URLs are e.l.f.'s to
   approve, not this repository's. The page loads nothing from anywhere, on
   purpose — a privacy notice for an extension that makes no third-party
   requests should not make any either.
@@ -32,8 +31,6 @@
         --rule: #e4e4ea;
         --accent: #c3148c;
         --panel: #f6f6f9;
-        --todo-bg: #fff3b0;
-        --todo-fg: #5a4300;
       }
       @media (prefers-color-scheme: dark) {
         :root:not([data-theme="light"]) {
@@ -43,8 +40,6 @@
           --rule: #2a2a33;
           --accent: #ff5cc8;
           --panel: #1b1b22;
-          --todo-bg: #4a3b00;
-          --todo-fg: #ffe38a;
         }
       }
       :root[data-theme="dark"] {
@@ -54,8 +49,6 @@
         --rule: #2a2a33;
         --accent: #ff5cc8;
         --panel: #1b1b22;
-        --todo-bg: #4a3b00;
-        --todo-fg: #ffe38a;
       }
 
       * {
@@ -141,12 +134,6 @@
       a {
         color: var(--accent);
       }
-      mark[data-todo] {
-        background: var(--todo-bg);
-        color: var(--todo-fg);
-        padding: 0 0.25em;
-        border-radius: 3px;
-      }
       footer {
         margin-top: 3rem;
         padding-top: 1.5rem;
@@ -176,8 +163,7 @@
       <p>
         This notice covers the elfyou Twitch extension, which shows e.l.f.
         Cosmetics products in a panel below the stream and in an overlay on top
-        of the video. It is published by
-        <mark data-todo>TODO: operator name</mark>.
+        of the video. It is published by DenwaVR.
       </p>
 
       <h2>What the extension does not do</h2>
@@ -244,16 +230,6 @@
         not sent anywhere.
       </p>
 
-      <h2>Chat commands</h2>
-      <p>
-        Some products show a chat command, such as <code>!shampoo</code>. The
-        extension only displays that text. If you type the command in chat, the
-        channel's chat bot replies with a link. That bot is run by the channel,
-        separately from the extension, and is not covered by this notice.
-        Anything you type in chat is handled by Twitch under its own privacy
-        notice.
-      </p>
-
       <h2>Changes to this notice</h2>
       <p>
         If the extension changes in a way that affects your data, this notice
@@ -264,7 +240,7 @@
       <h2>Contact</h2>
       <p>
         Questions about this notice can be sent to
-        <mark data-todo>TODO: contact email</mark>.
+        <a href="mailto:alex@egen.co">alex@egen.co</a>.
       </p>
 
       <footer>
