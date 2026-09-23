@@ -11,3 +11,9 @@ the two will drift.
 
 `.nojekyll` tells Pages to serve the file as written instead of running it
 through Jekyll.
+
+`review/` holds screenshots for the Twitch review team, linked from the
+submission's walkthrough. The Deals section they show only appears during
+Prime Big Deal Days (October 6–7, 2026), so a reviewer can't see it in the
+build they review. They were taken locally with a temporary deal window. The
+privacy notice doesn't link to them.
