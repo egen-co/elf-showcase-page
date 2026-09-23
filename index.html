@@ -1,0 +1,276 @@
+<!doctype html>
+<!--
+  Privacy notice for the elfyou Twitch extension.
+
+  This is the source. It is published from the separate public repository
+  egen-co/elf-showcase-page with GitHub Pages, because this repository is
+  private and GitHub Free only serves Pages from public ones. Copy this file
+  there as index.html; https://egen-co.github.io/elf-showcase-page/ goes in the
+  Privacy Notice field under Version Details.
+
+  Keep it in step with "User Data" in README.md — they describe the same
+  behaviour, and a reviewer may read both.
+
+  Before publishing, fill the two TODO fields below (search for data-todo) and
+  get the text approved: RELEASE.md notes that the legal URLs are e.l.f.'s to
+  approve, not this repository's. The page loads nothing from anywhere, on
+  purpose — a privacy notice for an extension that makes no third-party
+  requests should not make any either.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="index, follow" />
+    <title>elfyou Extension Privacy</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #1b1b1f;
+        --muted: #5b5b66;
+        --rule: #e4e4ea;
+        --accent: #c3148c;
+        --panel: #f6f6f9;
+        --todo-bg: #fff3b0;
+        --todo-fg: #5a4300;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #121216;
+          --fg: #ececf1;
+          --muted: #a3a3b0;
+          --rule: #2a2a33;
+          --accent: #ff5cc8;
+          --panel: #1b1b22;
+          --todo-bg: #4a3b00;
+          --todo-fg: #ffe38a;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #121216;
+        --fg: #ececf1;
+        --muted: #a3a3b0;
+        --rule: #2a2a33;
+        --accent: #ff5cc8;
+        --panel: #1b1b22;
+        --todo-bg: #4a3b00;
+        --todo-fg: #ffe38a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          17px/1.6 system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 3rem 16px 4rem;
+      }
+      header {
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .eyebrow {
+        margin: 0 0 0.5rem;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(1.75rem, 5vw, 2.25rem);
+        line-height: 1.2;
+      }
+      .updated {
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      h2 {
+        margin: 2.25rem 0 0.5rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+      }
+      p,
+      ul {
+        margin: 0 0 1rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 0.35rem;
+      }
+      .summary {
+        background: var(--panel);
+        border-left: 4px solid var(--accent);
+        padding: 1rem 1.25rem;
+        margin: 0 0 1rem;
+      }
+      .summary p:last-child {
+        margin-bottom: 0;
+      }
+      code {
+        font:
+          0.9em ui-monospace,
+          SFMono-Regular,
+          Consolas,
+          monospace;
+        background: var(--panel);
+        padding: 0.1em 0.35em;
+        border-radius: 4px;
+        overflow-wrap: anywhere;
+      }
+      a {
+        color: var(--accent);
+      }
+      mark[data-todo] {
+        background: var(--todo-bg);
+        color: var(--todo-fg);
+        padding: 0 0.25em;
+        border-radius: 3px;
+      }
+      footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--rule);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Twitch Extension</p>
+        <h1>elfyou Extension Privacy Notice</h1>
+        <p class="updated">Last updated 22 September 2026</p>
+      </header>
+
+      <div class="summary">
+        <p>
+          <strong>The extension collects no data about you.</strong> It does not
+          read chat, does not ask for your Twitch identity, stores nothing in
+          your browser, and makes no requests to anyone except to load its own
+          files.
+        </p>
+      </div>
+
+      <p>
+        This notice covers the elfyou Twitch extension, which shows e.l.f.
+        Cosmetics products in a panel below the stream and in an overlay on top
+        of the video. It is published by
+        <mark data-todo>TODO: operator name</mark>.
+      </p>
+
+      <h2>What the extension does not do</h2>
+      <ul>
+        <li>It does not connect to Twitch chat or read any chat messages.</li>
+        <li>
+          It does not request access to your Twitch identity, and never sees
+          your Twitch username or account details.
+        </li>
+        <li>
+          It stores nothing in your browser: no cookies, no local storage, no
+          other browser storage. Nothing you do in the extension is remembered
+          between sessions.
+        </li>
+        <li>
+          It contains no analytics, tracking or advertising code, and sends no
+          data about you anywhere.
+        </li>
+      </ul>
+
+      <h2>What the extension loads</h2>
+      <p>
+        The product list and product images are part of the extension itself and
+        are served by Twitch along with it. The extension does not fetch
+        anything from any other server, so no third party is told that you
+        opened it or which products you looked at.
+      </p>
+
+      <h2>Twitch</h2>
+      <p>
+        Twitch requires every extension to load its Extension Helper script.
+        That script belongs to Twitch, and Twitch's handling of extension use is
+        covered by
+        <a href="https://legal.twitch.com/legal/privacy-notice/"
+          >Twitch's privacy notice</a
+        >. This extension does not use the helper to request any information
+        about you.
+      </p>
+
+      <h2>Links to Amazon</h2>
+      <p>
+        Some products have a "Shop on Amazon" button that opens the product's
+        Amazon listing in a new tab. Nothing is sent to Amazon when a product is
+        shown. Amazon only receives your visit if you choose to open the link.
+      </p>
+      <p>
+        Some of these links carry Amazon Attribution parameters supplied by
+        Amazon (for example <code>maas</code>, <code>ref_=aa_maas</code> and
+        <code>tag=maas</code>). They let e.l.f. count how many visits to a
+        listing came from the extension. They are part of the link itself, and
+        are only read by Amazon once you open it. From then on, your visit is
+        covered by
+        <a
+          href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+          >Amazon's privacy notice</a
+        >, not this one.
+      </p>
+
+      <h2>Deals</h2>
+      <p>
+        During a scheduled promotion, products on offer are marked and shown in
+        a Deals section. Whether a deal is running is worked out from the clock
+        on your own device. The check happens in your browser, and the time is
+        not sent anywhere.
+      </p>
+
+      <h2>Chat commands</h2>
+      <p>
+        Some products show a chat command, such as <code>!shampoo</code>. The
+        extension only displays that text. If you type the command in chat, the
+        channel's chat bot replies with a link. That bot is run by the channel,
+        separately from the extension, and is not covered by this notice.
+        Anything you type in chat is handled by Twitch under its own privacy
+        notice.
+      </p>
+
+      <h2>Changes to this notice</h2>
+      <p>
+        If the extension changes in a way that affects your data, this notice
+        will be updated before that version is released, and the date at the top
+        will change.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this notice can be sent to
+        <mark data-todo>TODO: contact email</mark>.
+      </p>
+
+      <footer>
+        The elfyou extension is built on the open-source Alveus Sanctuary Twitch
+        extension, used under the Apache License 2.0.
+      </footer>
+    </main>
+  </body>
+</html>
